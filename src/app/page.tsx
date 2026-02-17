@@ -23,7 +23,7 @@ export default function Home() {
     <DashboardShell>
       <div className="mb-6">
         <h2 className="text-2xl sm:text-3xl font-bold text-bwb-tertiary mb-2">
-          Bozeman Expansion — Deal Comparison
+          Bozeman Expansion Deal Comparison
         </h2>
         <p className="text-bwb-secondary/60 text-sm sm:text-base">
           Compare two partnership structures side-by-side with interactive
