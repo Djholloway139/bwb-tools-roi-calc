@@ -1,11 +1,9 @@
-import Image from "next/image";
-
 export default function Header() {
   return (
     <header className="bg-bwb-secondary text-white px-6 py-4">
       <div className="max-w-7xl mx-auto flex items-center gap-4">
-        <Image
-          src="/bwb-logo.png"
+        <img
+          src="/roi-calc/bwb-logo.png"
           alt="BWB Logo"
           width={48}
           height={48}
