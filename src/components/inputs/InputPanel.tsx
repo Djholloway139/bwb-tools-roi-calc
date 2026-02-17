@@ -24,7 +24,7 @@ export default function InputPanel({
 }: InputPanelProps) {
   return (
     <div className="bg-white rounded-xl border border-bwb-border p-5 space-y-5">
-      <h3 className="text-lg font-bold text-bwb-secondary">
+      <h3 className="text-lg font-normal text-bwb-secondary">
         Assumptions
       </h3>
 

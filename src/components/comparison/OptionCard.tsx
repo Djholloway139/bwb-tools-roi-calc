@@ -33,7 +33,7 @@ export default function OptionCard({ option, result }: OptionCardProps) {
       className={`bg-white rounded-xl border-2 ${borderColor} p-5 space-y-4`}
     >
       <div className={`${accentBg} text-white rounded-lg px-4 py-2.5`}>
-        <h3 className="font-bold text-base">
+        <h3 className="font-normal text-base">
           Option {option}:{" "}
           {option === 1 ? "Partnership-Licensing" : "True Partnership LLC"}
         </h3>

@@ -5,7 +5,7 @@ import "./globals.css";
 const playfair = Playfair_Display_SC({
   variable: "--font-playfair",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400"],
 });
 
 const montserrat = Montserrat({

@@ -9,7 +9,7 @@ export default function Header() {
           height={48}
           className="rounded"
         />
-        <h1 className="text-2xl font-bold tracking-tight">
+        <h1 className="text-2xl font-normal">
           BWB ROI Calculator
         </h1>
       </div>

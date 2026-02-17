@@ -15,7 +15,7 @@ export default function ChartWrapper({
 }: ChartWrapperProps) {
   return (
     <div className="bg-white rounded-xl border border-bwb-border p-4 sm:p-5">
-      <h4 className="text-sm font-bold text-bwb-secondary mb-3">{title}</h4>
+      <h4 className="text-sm font-normal text-bwb-secondary mb-3">{title}</h4>
       <ResponsiveContainer width="100%" height={height}>
         {children}
       </ResponsiveContainer>
