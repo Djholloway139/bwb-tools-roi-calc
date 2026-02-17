@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BWB ROI Calculator
+
+Interactive financial modeling tool for comparing two BWB (Betches Walking Betches) expansion deal structures side-by-side. Built for Danette, the prospective Bozeman, MT partner.
+
+## Deal Structures
+
+- **Option 1: Partnership-Licensing** — $30K upfront + progressive licensing fees on annual revenue
+- **Option 2: True Partnership LLC** — $20K upfront for 49% equity, profit split 51/49
+
+## Features
+
+- **Revenue-driven inputs** — Number of clients × average service price drives starting monthly revenue
+- **Compound growth modeling** — Configurable monthly growth rate with 12/18/24-month timelines
+- **Scenario presets** — Conservative, Moderate, Aggressive with one-click switching
+- **ROI metrics** — Total Revenue, Total Profit, Partner Take-Home, ROI %, Break-Even Month
+- **Interactive charts** — Revenue projections, cumulative income, net take-home, fee comparison
+- **Progressive licensing brackets** — Marginal rate calculation matching US tax bracket structure
+
+## Tech Stack
+
+- Next.js 16 + TypeScript + Tailwind CSS v4
+- Recharts for data visualization
+- Jest for unit/integration testing
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the calculator.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tests
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm test
+```
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+Docker standalone build with PM2, behind Traefik reverse proxy.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+docker build -t bwb-roi .
+docker run -d -p 3000:3000 bwb-roi
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**URL**: `https://bwb-tools.rapiqual.com`

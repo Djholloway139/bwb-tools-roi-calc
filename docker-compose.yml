@@ -1,0 +1,17 @@
+services:
+  bwb-tools:
+    build: .
+    container_name: bwb-tools
+    restart: unless-stopped
+    networks:
+      - root_default
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.bwb-tools.rule=Host(`bwb-tools.rapiqual.com`)"
+      - "traefik.http.routers.bwb-tools.entrypoints=websecure"
+      - "traefik.http.routers.bwb-tools.tls.certresolver=mytlschallenge"
+      - "traefik.http.services.bwb-tools.loadbalancer.server.port=3000"
+
+networks:
+  root_default:
+    external: true
