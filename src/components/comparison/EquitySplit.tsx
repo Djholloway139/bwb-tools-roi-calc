@@ -15,7 +15,7 @@ export default function EquitySplit() {
           className="bg-bwb-primary flex items-center justify-center text-bwb-secondary text-xs font-medium"
           style={{ width: "49%" }}
         >
-          Partner 49%
+          Danette 49%
         </div>
       </div>
     </div>

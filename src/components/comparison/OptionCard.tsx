@@ -46,7 +46,7 @@ export default function OptionCard({ option, result }: OptionCardProps) {
 
       {/* Hero: Partner Take-Home + ROI */}
       <div className="bg-bwb-background rounded-lg p-4 flex flex-col items-center">
-        <p className="text-xs text-bwb-secondary/60 mb-0.5">Partner Take-Home</p>
+        <p className="text-xs text-bwb-secondary/60 mb-0.5">Danette&apos;s Take-Home</p>
         <p className="text-2xl font-bold text-bwb-tertiary tabular-nums">
           {formatCurrency(partnerTakeHome)}
         </p>
