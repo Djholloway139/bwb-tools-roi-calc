@@ -47,5 +47,21 @@
 - [x] ecosystem.config.js
 - [x] next.config.ts standalone output
 - [x] .dockerignore
-- [ ] GitHub repo (pending user action)
-- [ ] DNS + VPS deployment (pending user action)
+- [x] GitHub repo: https://github.com/Djholloway139/bwb-tools-roi-calc
+- [x] DNS + VPS deployment
+  - Container `bwb-tools` running on Hostinger VPS (72.61.18.201)
+  - Live at https://bwb-tools.rapiqual.com/roi-calc
+  - basePath `/roi-calc` configured in next.config.ts
+  - Traefik auto-discovery via `root_default` external network
+  - No other containers affected (n8n, vault-agents, area-checker, chappie, ppb-bot, n8n-debug-agent all untouched)
+
+## Phase 7: Post-Deploy Fixes
+- [x] Replaced logo with correct Betches B Logo (public/bwb-logo.png)
+- [x] Fixed logo not rendering — switched from Next.js `<Image>` to plain `<img>` with explicit basePath prefix (`/roi-calc/bwb-logo.png`)
+- [x] Removed em dash from title — now reads "Bozeman Expansion Deal Comparison"
+- [x] Applied Betches font branding:
+  - Playfair Display SC: regular weight (400) only, no bold
+  - All headings: `font-weight: 400` enforced in globals.css
+  - Letter spacing: `-0.03em` on all headings (matches -30 tracking from brand guide)
+  - Montserrat: body font, unchanged
+- [x] All changes pushed to GitHub and redeployed to VPS
